@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradise - Reservaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Hotel <span>Paradise</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#habitaciones">Habitaciones</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#reservaciones">Reservaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h1>Bienvenido al Hotel Paradise</h1>
+                    <p>Disfruta de unas vacaciones inolvidables en nuestro lujoso hotel con vistas al mar y todos los servicios que puedas imaginar.</p>
+                    <a href="#reservaciones" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h1>Habitaciones de Lujo</h1>
+                    <p>Nuestras habitaciones están diseñadas para ofrecerte el máximo confort y elegancia durante tu estancia.</p>
+                    <a href="#habitaciones" class="btn">Ver Habitaciones</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h1>Servicios Exclusivos</h1>
+                    <p>Disfruta de nuestro spa, piscina infinita, restaurante gourmet y muchos más servicios exclusivos para nuestros huéspedes.</p>
+                    <a href="#servicios" class="btn">Conocer Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container booking-form" id="reservaciones" style="margin-top: 50px;">
+        <h2>Reserva tu Estancia</h2>
+        <form id="reservationForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="checkin">Fecha de Entrada</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Fecha de Salida</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">Adultos</label>
+                    <select id="adults" name="adults" required>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">Niños</label>
+                    <select id="children" name="children">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Tipo de Habitación</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="standard">Habitación Estándar</option>
+                        <option value="deluxe">Habitación Deluxe</option>
+                        <option value="suite">Suite</option>
+                        <option value="presidential">Suite Presidencial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="promo">Código Promocional (opcional)</label>
+                    <input type="text" id="promo" name="promo">
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Ver Disponibilidad</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="rooms" id="habitaciones">
+        <div class="container">
+            <h2 class="section-title">Nuestras Habitaciones</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Habitación Estándar">
+                    </div>
+                    <div class="room-info">
+                        <h3>Habitación Estándar</h3>
+                        <div class="room-price">$120/noche</div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 cama queen size</li>
+                            <li><i class="fas fa-ruler-combined"></i> 25 m²</li>
+                            <li><i class="fas fa-wifi"></i> WiFi gratuito</li>
+                            <li><i class="fas fa-tv"></i> TV pantalla plana</li>
+                        </ul>
+                        <a href="#reservaciones" class="btn">Reservar Ahora</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Habitación Deluxe">
+                    </div>
+                    <div class="room-info">
+                        <h3>Habitación Deluxe</h3>
+                        <div class="room-price">$180/noche</div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 cama king size</li>
+                            <li><i class="fas fa-ruler-combined"></i> 35 m²</li>
+                            <li><i class="fas fa-wifi"></i> WiFi gratuito</li>
+                            <li><i class="fas fa-tv"></i> TV pantalla plana 42"</li>
+                            <li><i class="fas fa-coffee"></i> Cafetera</li>
+                        </ul>
+                        <a href="#reservaciones" class="btn">Reservar Ahora</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Suite">
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite</h3>
+                        <div class="room-price">$250/noche</div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 cama king size + sala</li>
+                            <li><i class="fas fa-ruler-combined"></i> 50 m²</li>
+                            <li><i class="fas fa-wifi"></i> WiFi gratuito</li>
+                            <li><i class="fas fa-tv"></i> 2 TVs pantalla plana</li>
+                            <li><i class="fas fa-coffee"></i> Cafetera</li>
+                            <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+                        </ul>
+                        <a href="#reservaciones" class="btn">Reservar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios Exclusivos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa & Bienestar</h3>
+                    <p>Relájate con nuestros tratamientos de spa diseñados para rejuvenecer cuerpo y mente. Masajes, terapias y más.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Piscina Infinita</h3>
+                    <p>Nuestra espectacular piscina infinita con vistas al mar es el lugar perfecto para relajarse y disfrutar del paisaje.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurante Gourmet</h3>
+                    <p>Experiencia culinaria de primera clase con los mejores chefs y productos locales de temporada.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Gimnasio Equipado</h3>
+                    <p>Mantén tu rutina de ejercicios con nuestro gimnasio de última generación y entrenadores personales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Bar en la Piscina</h3>
+                    <p>Disfruta de cócteles exclusivos y bebidas refrescantes sin salir de la piscina.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Eventos Especiales</h3>
+                    <p>Celebra tus eventos importantes con nosotros. Bodas, aniversarios y reuniones corporativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hotel Paradise</h3>
+                    <p>Dirección: Av. del Mar 1234, Ciudad Costera</p>
+                    <p>Teléfono: +1 234 567 890</p>
+                    <p>Email: info@hotelparadise.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#habitaciones">Habitaciones</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#reservaciones">Reservaciones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Spa & Bienestar</a></li>
+                        <li><a href="#servicios">Restaurante Gourmet</a></li>
+                        <li><a href="#servicios">Piscina Infinita</a></li>
+                        <li><a href="#servicios">Gimnasio</a></li>
+                        <li><a href="#servicios">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Suscríbete a nuestro newsletter</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i> Suscribir
+                        </button>
+                    </form>
+                </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hotel Paradise. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
